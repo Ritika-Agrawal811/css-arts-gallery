@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Joy</title>
+    <style type="text/css">
+      .joy {
+        background: radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            17.25em 16.75em/3em 1em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            17.25em 17.25em/3.5em 1em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            16em 17.75em/1em 3em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            16.75em 17.5em/1em 3.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            16em 15.25em/1em 3em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            16.75em 15em/1em 3.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            18.75em 26.75em/3em 1em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            18.75em 27.25em/3.5em 1em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            16em 26.75em/3em 1em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            16em 27.25em/3.5em 1em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            17.5em 27.75em/1em 3em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            18.25em 27.5em/1em 3.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            17.5em 25.25em/1em 3em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            18.25em 25em/1em 3.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            19em 19.75em/3em 1em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            19em 20.25em/3.5em 1em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            20.5em 20.75em/1em 3em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            21.25em 20.5em/1em 3.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            20.5em 18.25em/1em 3em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(211, 211, 211) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            21.25em 18em/1em 3.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            23.25em 9.5em/2em 4.5em,
+          linear-gradient(90deg, rgb(245, 218, 160) 49%, rgba(0, 0, 0, 0) 51%)
+            23.5em 8.85em /1.5em 2.5em,
+          linear-gradient(90deg, #ffb6c1 49%, rgba(0, 0, 0, 0) 51%) 19.5em 8.9em /8em
+            0.3em,
+          linear-gradient(90deg, rgb(245, 218, 160) 49%, rgba(0, 0, 0, 0) 51%)
+            19.75em 8.15em /7.25em 0.9em,
+          linear-gradient(90deg, rgb(255, 255, 255) 49%, rgba(0, 0, 0, 0) 51%)
+            19.75em 9.15em /7.25em 0.5em,
+          radial-gradient(40% 40% at 20% 20%, #000 49%, rgba(0, 0, 0, 0) 51%)
+            19.5em 8.6em/11.5em 5.75em,
+          radial-gradient(40% 40% at 20% 20%, #ffb6c1 49%, rgba(0, 0, 0, 0) 51%)
+            19.25em 8.35em/11.75em 7em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            21.15em 8.3em/8em 5em,
+          radial-gradient(40% 40% at 20% 20%, #000 49%, rgba(0, 0, 0, 0) 51%)
+            21.35em 8.4em/8em 5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 0) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            23.75em 6.75em/3.5em 3.75em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 255) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            23.5em 6.25em/5em 5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(255, 255, 255) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            23.15em 5.75em/7.25em 6.25em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 205) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            23em 5.5em/8em 7em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            5.25em 5.75em/9.5em 6em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            2.25em 6em/9.5em 1.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            2.5em 6.75em/9.5em 1.5em,
+          linear-gradient(90deg, rgb(255, 255, 255) 49%, rgba(0, 0, 0, 0) 51%)
+            23.5em 13.25em /23em 1.35em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(255, 255, 255) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            22.25em 16.15em/37em 10em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            21.75em 13.5em/38em 15em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            18em 3.5em/23em 22em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 255) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            18.25em 2.5em/26em 24em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(255, 255, 255) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            11.75em 20.5em/10em 24em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(255, 255, 255) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            22em 12em/25em 42em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(240, 245, 0) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            13em 22em/35em 26em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(240, 245, 0) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            15em 12em/25em 40em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            14.75em 41em/6em 3em,
+          linear-gradient(90deg, rgb(255, 255, 255) 49%, rgba(0, 0, 0, 0) 51%)
+            19.5em 31em /5em 9em,
+          linear-gradient(90deg, rgb(255, 255, 255) 49%, rgba(0, 0, 0, 0) 51%)
+            16.5em 42.25em /3em 2em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(255, 255, 255) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            13.15em 28em/10em 34em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            15em 28em/12em 37em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(255, 255, 255) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            10em 32em/56em 34em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(255, 255, 255) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            20em 35em/27em 24em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            20em 29em/38em 38em;
+
+        background-repeat: no-repeat;
+        font-size: 10px;
+        width: 40em;
+        height: 50em;
+        margin-top: 100px;
+        margin-left: 500px;
+      }
+
+      .joy:after {
+        content: "";
+        position: absolute;
+        background: radial-gradient(
+              40% 40% at 20% 20%,
+              #00bfff 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            16.25em 2em/1em 9em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 255) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            16.75em 1em/1.25em 9em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            19em -1.5em/1em 9em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 255) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            19.5em -1.5em/1.25em 9em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            20em -1.5em/1em 9em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 255) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            20.5em -1.5em/1.25em 9em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            21.5em -1.5em/1em 9em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 255) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            22em -1.5em/1.25em 9em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            23em -1.5em/1em 9em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 255) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            23.5em -1.5em/1.25em 9em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            24.25em 0.5em/1em 9em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 255) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            24.75em 0.5em/1.25em 9em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            25.5em 1.5em/1em 9em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            26.25em 2em/1.5em 9.5em,
+          linear-gradient(90deg, rgb(240, 245, 0) 49%, rgba(0, 0, 0, 0) 51%)
+            18.95em 9.75em /3em 3em,
+          linear-gradient(90deg, rgb(255, 255, 255) 49%, rgba(0, 0, 0, 0) 51%)
+            34.25em 34em /2em 3em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            19.75em 4.45em/2.75em 2.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 0) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            19.65em 4.5em/2.5em 2.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(255, 255, 255) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            30.1em 32em/6em 12em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            3.5em 10.75em/9.5em 1.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(255, 255, 255) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            7.75em 9.25em/8.5em 3em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(255, 255, 255) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            5.65em 9.5em/3.5em 3em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            7em 8.5em/2em 9.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            35.5em 3.75em/10.5em 1.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            36.75em 4.5em/9.5em 1.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            36em 5.25em/10.5em 1.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 0) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            18.25em 3.25em/3.5em 3.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 255) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            18em 2.75em/4.25em 5.25em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(255, 255, 255) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            17.75em 2.25em/5.25em 6.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 205) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            17.5em 2em/6em 7em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            17.65em 1.75em/6.5em 8.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 0) 48%,
+              rgba(0, 0, 0, 0) 52%
+            )
+            17.65em 2.25em/6.75em 7em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            20.75em 7.95em/6.5em 10em,
+          linear-gradient(
+              90deg,
+              rgb(255, 255, 255) 49.5%,
+              rgba(0, 0, 0, 0) 50.5%
+            )
+            7.25em 9em /23.15em 1.3em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(255, 255, 255) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            7em 11.8em/30em 6em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            7em 9.25em/32em 11em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            45em 24.75em/4em 7.5em,
+          linear-gradient(
+              90deg,
+              rgb(255, 255, 255) 49.5%,
+              rgba(0, 0, 0, 0) 50.5%
+            )
+            46.5em 24.75em /2em 3em,
+          linear-gradient(
+              90deg,
+              rgb(255, 255, 255) 49.5%,
+              rgba(0, 0, 0, 0) 50.5%
+            )
+            32.5em 25.5em /23em 5em,
+          linear-gradient(
+              90deg,
+              rgb(255, 255, 255) 49.5%,
+              rgba(0, 0, 0, 0) 50.5%
+            )
+            34.75em 17.5em /23em 5em;
+
+        background-repeat: no-repeat;
+        font-size: 10px;
+        width: 60em;
+        height: 50em;
+        transform: rotate(30deg);
+        margin-top: 50px;
+        margin-left: -98px;
+      }
+
+      .joy:before {
+        content: "";
+        position: absolute;
+
+        background: radial-gradient(
+              40% 40% at 20% 20%,
+              #00bfff 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            25em 3.5em/6em 1em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            24.75em 4.25em/6em 1em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            26em 3.5em/6em 1em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            26.75em 4.25em/6em 1em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            28em 4em/1em 6em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            28.75em 4em/1em 6em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 255) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            27em 3.5em/1.25em 7em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            27.75em 3.5em/1.25em 7em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            29em 4em/1.25em 6em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            29.75em 4em/1.25em 6em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            30em 4.95em/1.5em 6em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            30.75em 4.95em/1.5em 6em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            31.75em 5.5em/1.5em 9em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            31em 5.5em/1em 9em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            31.25em 7.25em/9em 1.25em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            30.5em 6.5em/9em 1.25em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            31.25em 8.25em/1.25em 9em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            30.5em 9.5em/1.25em 9em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            32.25em 7.75em/1.5em 9em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            31.5em 8.75em/1.5em 9em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            27.75em 11.75em/9em 1.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 255) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            27.5em 12em/9em 2em,
+          radial-gradient(40% 40% at 20% 20%, #00bfff 46%, rgba(0, 0, 0, 0) 54%)
+            26.75em 12.75em/9em 1.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 255) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            26em 13em/9em 1.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 255) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            31em 6.75em/9em 2em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(0, 0, 255) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            31em 7.75em/9em 1.5em,
+          linear-gradient(90deg, rgb(255, 255, 255) 49%, rgba(0, 0, 0, 0) 51%)
+            14em 30.5em /3em 6em,
+          linear-gradient(
+              90deg,
+              rgb(255, 255, 255) 49.5%,
+              rgba(0, 0, 0, 0) 50.5%
+            )
+            31em 30em /3em 15em,
+          linear-gradient(
+              90deg,
+              rgb(255, 255, 255) 49.5%,
+              rgba(0, 0, 0, 0) 50.5%
+            )
+            27em 40em /4em 5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            7.25em 4.75em/9.5em 1.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(255, 255, 255) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            34.5em 16.75em/12em 3.5em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            35.75em 18em/9.5em 2em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(245, 218, 160) 46%,
+              rgba(0, 0, 0, 0) 54%
+            )
+            36.75em 19.5em/1.5em 8em,
+          radial-gradient(
+              40% 40% at 20% 20%,
+              rgb(255, 255, 255) 49%,
+              rgba(0, 0, 0, 0) 51%
+            )
+            22em 42em/25em 15em;
+
+        background-repeat: no-repeat;
+        font-size: 10px;
+        width: 40em;
+        height: 50em;
+        transform: rotate(-13deg);
+      }
+    </style>
+  </head>
+  <body data-barba="wrapper">
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <main data-barba="container" data-barba-namespace="home">
+      <a href="../index.html" class="back-btn"
+        ><i class="fas fa-chevron-left"></i> Back</a
+      >
+      <h2>Joy</h2>
+      <div class="joy"></div>
+    </main>
+  </body>
+</html>

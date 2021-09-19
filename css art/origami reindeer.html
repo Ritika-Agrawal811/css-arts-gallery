@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Origami</title>
+    <style>
+      .reindeer {
+        margin-top: 15%;
+        margin-left: 42%;
+      }
+
+      .neck {
+        position: absolute;
+        width: 100px;
+        height: 140px;
+        background-color: red;
+        clip-path: polygon(98% 0%, 98% 100%, 63% 62%, 79% 1%);
+      }
+
+      .neck:before {
+        content: "";
+        position: absolute;
+        width: 75px;
+        height: 125px;
+        margin-top: 5px;
+        margin-left: 21.5px;
+        background-color: #fff;
+        clip-path: polygon(98% 0%, 98% 100%, 63% 62%, 79% 1%);
+      }
+
+      .upper-body {
+        position: absolute;
+        width: 125px;
+        height: 110px;
+        margin-top: 82px;
+        margin-left: 29px;
+        background-color: red;
+        clip-path: polygon(0% 16%, 22% 4%, 44% 33%, 31% 84%, 0% 100%);
+        transform: rotate(10deg);
+      }
+
+      .upper-body:before {
+        content: "";
+        position: absolute;
+        width: 106px;
+        height: 97px;
+        margin-top: 5px;
+        margin-left: 4px;
+        background-color: #fff;
+        clip-path: polygon(0% 16%, 22% 4%, 44% 33%, 31% 84%, 0% 100%);
+      }
+
+      .upper-body-backside {
+        position: absolute;
+        width: 90px;
+        height: 100px;
+        margin-top: 80px;
+        margin-left: 17px;
+        background-color: red;
+        clip-path: polygon(2% 18%, 42% 4%, 90% 54%, 73% 98%, 0% 76%);
+        transform: rotate(5deg);
+        z-index: -1;
+      }
+
+      .upper-body-backside:before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 92px;
+        margin-top: 3px;
+        margin-left: 5px;
+        background-color: #fff;
+        clip-path: polygon(2% 18%, 42% 4%, 90% 54%, 73% 98%, 0% 76%);
+      }
+
+      .lower-body {
+        position: absolute;
+        width: 100px;
+        height: 118px;
+        margin-top: 89px;
+        margin-left: -28px;
+        background-color: red;
+        clip-path: polygon(
+          12% 7%,
+          47% 4%,
+          48% 50%,
+          32% 87%,
+          5% 78%,
+          10% 31%,
+          3% 27%
+        );
+        transform: rotate(8deg);
+      }
+
+      .lower-body:before {
+        content: "";
+        position: absolute;
+        width: 83px;
+        height: 105px;
+        margin-top: 5px;
+        margin-left: 5px;
+        background-color: #fff;
+        clip-path: polygon(
+          12% 7%,
+          47% 4%,
+          48% 50%,
+          32% 87%,
+          5% 78%,
+          10% 31%,
+          3% 27%
+        );
+      }
+
+      .lower-body-inner {
+        position: absolute;
+        width: 70px;
+        height: 73px;
+        margin-top: 95px;
+        margin-left: -22px;
+        background-color: red;
+        clip-path: polygon(0 31%, 0% 100%, 100% 100%);
+        transform: rotate(5deg);
+        z-index: -1;
+      }
+
+      .lower-body-inner:before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 65px;
+        margin-top: 5.5px;
+        margin-left: 2.5px;
+        background-color: #fff;
+        clip-path: polygon(0 31%, 0% 100%, 100% 100%);
+      }
+
+      .thighs {
+        position: absolute;
+        width: 48px;
+        height: 40px;
+        margin-top: 166px;
+        margin-left: -32px;
+        background-color: red;
+        clip-path: polygon(25% 0%, 100% 0, 51% 100%, 0% 100%);
+        z-index: -1;
+      }
+
+      .thighs:before {
+        content: "";
+        position: absolute;
+        width: 38px;
+        height: 33px;
+        margin-top: 4px;
+        margin-left: 4.5px;
+        background-color: #fff;
+        clip-path: polygon(25% 0%, 100% 0, 51% 100%, 0% 100%);
+      }
+
+      .thigh-right {
+        margin-left: -13px;
+        margin-top: 163px;
+        transform: rotate(5deg);
+        z-index: -2;
+      }
+
+      .legs {
+        position: absolute;
+        width: 90px;
+        height: 80px;
+        background-color: red;
+        margin-top: 203px;
+        margin-left: -45px;
+        clip-path: polygon(19% 0, 38% 0, 19% 100%, 10% 100%);
+      }
+
+      .legs:before {
+        content: "";
+        position: absolute;
+        width: 58px;
+        height: 74px;
+        background-color: #fff;
+        margin-top: 4px;
+        margin-left: 7px;
+        clip-path: polygon(19% 0, 38% 0, 19% 100%, 10% 100%);
+        transform: rotate(3deg);
+      }
+
+      .leg-one {
+        margin-top: 200px;
+        margin-left: -24px;
+      }
+
+      .front-legs {
+        position: absolute;
+        width: 90px;
+        height: 110px;
+        background-color: red;
+        margin-top: 165px;
+        margin-left: 38px;
+        clip-path: polygon(19% 0, 33% 6%, 19% 100%, 10% 100%);
+      }
+
+      .front-legs:before {
+        content: "";
+        position: absolute;
+        width: 58px;
+        height: 100px;
+        background-color: #fff;
+        margin-top: 7px;
+        margin-left: 6.5px;
+        clip-path: polygon(19% 0, 33% 6%, 19% 100%, 10% 100%);
+        transform: rotate(2deg);
+      }
+
+      .leg-two {
+        margin-top: 170px;
+        margin-left: 50px;
+      }
+
+      .feet {
+        position: absolute;
+        width: 55px;
+        height: 50px;
+        background-color: red;
+        margin-top: 245px;
+        margin-left: -47px;
+        clip-path: polygon(23% 35%, 48% 100%, 27% 100%, 19% 81%);
+      }
+
+      .feet:before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 35px;
+        background-color: #fff;
+        margin-top: 13px;
+        margin-left: 5px;
+        clip-path: polygon(23% 35%, 48% 100%, 27% 100%, 19% 81%);
+      }
+
+      .feet-one {
+        margin-top: 242px;
+        margin-left: -26px;
+      }
+
+      .feet-two {
+        margin-top: 245px;
+        margin-left: 36px;
+      }
+
+      .feet-three {
+        margin-top: 245px;
+        margin-left: 48px;
+      }
+
+      .tail {
+        position: absolute;
+        width: 40px;
+        height: 35px;
+        background-color: red;
+        margin-top: 120px;
+        margin-left: -55px;
+        clip-path: polygon(85% 0, 16% 100%, 96% 100%);
+        z-index: -2;
+      }
+
+      .tail:before {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 27px;
+        background-color: #fff;
+        margin-top: 5px;
+        margin-left: 12px;
+        clip-path: polygon(85% 0, 16% 100%, 96% 100%);
+      }
+
+      .tail:after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 25px;
+        background-color: red;
+        margin-top: 15px;
+        margin-left: 25px;
+        transform: rotate(50deg);
+      }
+
+      .face {
+        position: absolute;
+        width: 45px;
+        height: 50px;
+        background-color: red;
+        margin-top: -5px;
+        margin-left: 65px;
+        clip-path: polygon(86% 0, 66% 80%, 49% 97%, 29% 81%, 8% 0);
+        z-index: 2;
+      }
+
+      .face:before {
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 40px;
+        background-color: #fff;
+        margin-top: 5px;
+        margin-left: 5px;
+        clip-path: polygon(86% 0, 66% 80%, 49% 97%, 29% 81%, 8% 0);
+      }
+
+      .head {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: red;
+        margin-top: -30px;
+        margin-left: 67px;
+        clip-path: polygon(69% 12%, 100% 65%, 49% 97%, 0 67%, 25% 13%);
+        z-index: 3;
+      }
+
+      .head:before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 34px;
+        background-color: #fff;
+        margin-top: 3px;
+        margin-left: 5px;
+        clip-path: polygon(69% 12%, 100% 65%, 49% 97%, 0 67%, 25% 13%);
+      }
+
+      .ears {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: red;
+        margin-top: -35px;
+        margin-left: 43px;
+        clip-path: polygon(44% 19%, 88% 47%, 71% 70%, 26% 68%, 0 11%);
+      }
+
+      .ears:before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        margin-top: 5px;
+        margin-left: 5px;
+        clip-path: polygon(44% 19%, 88% 47%, 71% 70%, 26% 68%, 0 11%);
+      }
+
+      .ears:after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 2px;
+        background-color: red;
+        margin-top: 15px;
+        margin-left: 5px;
+      }
+
+      .ear-right {
+        margin-left: 90px;
+        transform: scaleX(-1);
+      }
+
+      .antlers {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: red;
+        margin-top: -80px;
+        margin-left: 35px;
+        clip-path: polygon(0 19%, 17% 8%, 75% 100%, 66% 100%);
+        transform: rotate(-15deg);
+      }
+
+      .antlers:before {
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 50px;
+        background-color: #fff;
+        margin-top: 5px;
+        margin-left: 9px;
+        clip-path: polygon(0 19%, 17% 8%, 75% 100%, 66% 100%);
+        transform: rotate(-10deg);
+      }
+
+      .antler-right {
+        transform: scaleX(-1);
+        margin-left: 70px;
+      }
+
+      .antlers-above {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        background-color: red;
+        margin-top: -100px;
+        margin-left: 5px;
+        clip-path: polygon(21% 8%, 0 27%, 75% 89%);
+      }
+
+      .antlers-above:before {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 28px;
+        background-color: #fff;
+        margin-top: 5px;
+        margin-left: 5px;
+        clip-path: polygon(21% 8%, 0 27%, 75% 89%);
+      }
+
+      .antlers-above-right {
+        margin-top: -103px;
+        margin-left: 108px;
+        transform: scaleX(-1);
+      }
+
+      .antlers-above-second {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: red;
+        margin-top: -125px;
+        margin-left: 10px;
+        clip-path: polygon(16% 0, 0 18%, 51% 100%);
+      }
+
+      .antlers-above-second:before {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 45px;
+        background-color: #fff;
+        margin-top: 6px;
+        margin-left: 5px;
+        clip-path: polygon(16% 0, 0 18%, 51% 100%);
+      }
+
+      .antlers-above-second-right {
+        margin-top: -130px;
+        margin-left: 90px;
+        transform: scaleX(-1);
+      }
+
+      .antlers-front {
+        position: absolute;
+        width: 50px;
+        height: 55px;
+        background-color: red;
+        margin-top: -103px;
+        margin-left: 30px;
+        clip-path: polygon(50% 0%, 36% 93%, 64% 100%);
+      }
+
+      .antlers-front:before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 45px;
+        background-color: #fff;
+        margin-top: 8px;
+        margin-left: 10px;
+        clip-path: polygon(50% 0%, 36% 93%, 64% 100%);
+      }
+
+      .antlers-one {
+        margin-top: -100px;
+        margin-left: 82px;
+        transform: scaleX(-1);
+      }
+
+      .antlers-two {
+        margin-top: -70px;
+        margin-left: 68px;
+        transform: scaleX(-1);
+        width: 50px;
+        height: 40px;
+      }
+
+      .antlers-three {
+        margin-top: -73px;
+        margin-left: 48px;
+        width: 50px;
+        height: 40px;
+      }
+
+      .antlers-upper {
+        position: absolute;
+        width: 25px;
+        height: 30px;
+        background-color: red;
+        margin-top: -120px;
+        margin-left: -12px;
+        clip-path: polygon(5% 0, 61% 0, 98% 94%, 79% 97%);
+      }
+
+      .antlers-upper:before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 20px;
+        background-color: #fff;
+        margin-top: 5px;
+        margin-left: 6px;
+        clip-path: polygon(5% 0, 61% 0, 98% 94%, 79% 97%);
+      }
+
+      .antlers-upper-one {
+        margin-top: -120px;
+        margin-left: 145px;
+        transform: scaleX(-1);
+      }
+
+      .antlers-upper-two {
+        margin-top: -148px;
+        margin-left: 140px;
+        transform: scaleX(-1);
+      }
+
+      .antlers-upper-three {
+        margin-top: -145px;
+        margin-left: -5px;
+      }
+
+      .antlers-upper-group2 {
+        position: absolute;
+        width: 20px;
+        height: 35px;
+        background-color: red;
+        margin-top: -115px;
+        margin-left: 54px;
+        clip-path: polygon(1% 27%, 100% 0, 80% 51%, 0 48%);
+      }
+
+      .antlers-upper-group2:before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 25px;
+        background-color: #fff;
+        margin-top: 4px;
+        margin-left: 2px;
+        clip-path: polygon(1% 27%, 100% 0, 80% 51%, 0 48%);
+      }
+
+      .antlers-upper-four {
+        margin-top: -85px;
+        margin-left: 72px;
+      }
+
+      .antlers-upper-five {
+        margin-top: -83px;
+        margin-left: 74px;
+        transform: scaleX(-1);
+      }
+
+      .antlers-upper-six {
+        margin-top: -112px;
+        margin-left: 88px;
+        transform: scaleX(-1);
+      }
+    </style>
+  </head>
+  <body data-barba="wrapper">
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <main data-barba="container" data-barba-namespace="home">
+      <a href="../index.html" class="back-btn"
+        ><i class="fas fa-chevron-left"></i> Back</a
+      >
+      <h2>Origami Reindeer</h2>
+      <div class="reindeer">
+        <div class="antlers-upper-group2"></div>
+        <div class="antlers-upper-group2 antlers-upper-four"></div>
+        <div class="antlers-upper-group2 antlers-upper-five"></div>
+        <div class="antlers-upper-group2 antlers-upper-six"></div>
+        <div class="antlers-upper"></div>
+        <div class="antlers-upper antlers-upper-one"></div>
+        <div class="antlers-upper antlers-upper-two"></div>
+        <div class="antlers-upper antlers-upper-three"></div>
+        <div class="antlers-front"></div>
+        <div class="antlers-front antlers-one"></div>
+        <div class="antlers-front antlers-two"></div>
+        <div class="antlers-front antlers-three"></div>
+
+        <div class="antlers-above-second"></div>
+        <div class="antlers-above-second antlers-above-second-right"></div>
+        <div class="antlers-above"></div>
+        <div class="antlers-above antlers-above-right"></div>
+        <div class="antlers"></div>
+        <div class="antlers antler-right"></div>
+        <div class="ears"></div>
+        <div class="ears ear-right"></div>
+        <div class="head"></div>
+        <div class="face"></div>
+        <div class="neck"></div>
+        <div class="upper-body"></div>
+        <div class="upper-body-backside"></div>
+        <div class="lower-body"></div>
+        <div class="lower-body-inner"></div>
+        <div class="thighs"></div>
+        <div class="thighs thigh-right"></div>
+        <div class="legs"></div>
+        <div class="legs leg-one"></div>
+        <div class="front-legs"></div>
+        <div class="front-legs leg-two"></div>
+        <div class="feet"></div>
+        <div class="feet feet-one"></div>
+        <div class="feet feet-two"></div>
+        <div class="feet feet-three"></div>
+        <div class="tail"></div>
+      </div>
+    </main>
+  </body>
+</html>

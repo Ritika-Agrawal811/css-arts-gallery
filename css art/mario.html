@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mario</title>
+
+    <style>
+      .mario {
+        background: radial-gradient(
+              40% 40% at 50% 50%,
+              #fff 49%,
+              transparent 51%
+            )
+            17.25em 2.75em/6em 6em,
+          linear-gradient(90deg, #000 49%, transparent 51%) 18.25em 24.75em/0.5em
+            3em,
+          radial-gradient(40% 40% at 50% 50%, #c68642 48%, transparent 52%)
+            16.25em 21em/5em 12em,
+          radial-gradient(40% 40% at 50% 50%, #000 48%, transparent 52%) 16.5em
+            20.75em/5em 12em,
+          radial-gradient(40% 40% at 50% 50%, #c68642 48%, transparent 52%) 12em
+            19em/10em 17em,
+          radial-gradient(40% 40% at 50% 50%, #000 48%, transparent 52%) 11.55em
+            18.5em/11em 18em,
+          radial-gradient(40% 40% at 50% 50%, #f1c27d 48%, transparent 52%)
+            10.85em 19em/10em 17em,
+          radial-gradient(40% 40% at 50% 50%, #000 48%, transparent 52%) 10.85em
+            19em/10em 17em,
+          radial-gradient(40% 40% at 50% 50%, #8d5524 48%, transparent 52%) 16em
+            12.25em/3.5em 3.5em,
+          radial-gradient(40% 40% at 50% 50%, #8d5524 48%, transparent 52%)
+            16.75em 12em/3.5em 3.5em,
+          radial-gradient(40% 40% at 50% 50%, #ffdbac 48%, transparent 52%) 16em
+            6.5em/7em 10em,
+          radial-gradient(40% 40% at 50% 50%, #8d5524 48%, transparent 52%)
+            14.5em 7em/7em 10.5em,
+          radial-gradient(40% 40% at 50% 50%, #000 45%, transparent 55%) 20.35em
+            8em/2.75em 6em,
+          radial-gradient(40% 40% at 50% 50%, #ffdbac 48%, transparent 52%) 12em
+            9em/10.5em 10.5em,
+          radial-gradient(40% 40% at 50% 50%, #000 48%, transparent 52%) 11.5em
+            8.5em/10.75em 11.5em,
+          radial-gradient(40% 40% at 50% 50%, #ffdbac 48%, transparent 52%)
+            19.75em 8.25em/11em 9.5em,
+          radial-gradient(40% 40% at 50% 50%, #000 48%, transparent 52%) 19.75em
+            7.75em/11.65em 10.5em,
+          radial-gradient(40% 40% at 50% 50%, #000 45%, transparent 55%) 23em
+            8em/2.75em 6em,
+          radial-gradient(40% 40% at 50% 50%, #8d5524 48%, transparent 52%) 20em
+            13em/4em 4em,
+          radial-gradient(40% 40% at 50% 50%, #8d5524 48%, transparent 52%)
+            21.25em 13.45em/4em 4em,
+          radial-gradient(40% 40% at 50% 50%, #8d5524 48%, transparent 52%)
+            22.75em 13.45em/4em 4em,
+          radial-gradient(40% 40% at 50% 50%, #8d5524 48%, transparent 52%)
+            23.75em 13em/4em 4em,
+          radial-gradient(40% 40% at top, #8d5524 49%, transparent 51%) 16em
+            14em/16em 8.5em,
+          radial-gradient(40% 40% at 50% 50%, #ff0000 48%, transparent 52%) 21em
+            15.6em/3.7em 2.5em,
+          radial-gradient(40% 40% at top, #000 48%, transparent 52%) 20em 15.5em/6em
+            10em,
+          radial-gradient(40% 40% at 50% 50%, #ff0000 48%, transparent 52%) 11em
+            6em/8.5em 10em,
+          radial-gradient(40% 40% at 50% 50%, #000 48%, transparent 52%) 10.75em
+            5.75em/8.5em 10.5em,
+          radial-gradient(40% 40% at 50% 50%, #ffdbac 49%, transparent 51%) 10em -1.5em/23em
+            28em,
+          radial-gradient(40% 40% at 50% 50%, #000 49%, transparent 51%) 10em -2em/23em
+            29em,
+          radial-gradient(40% 40% at 50% 50%, #8d5524 48%, transparent 52%) 12em
+            10.75em/10em 10em,
+          radial-gradient(40% 40% at 50% 50%, #ff0000 49%, transparent 51%) 9em -4em/22em
+            28em,
+          radial-gradient(40% 40% at 50% 50%, #000 49%, transparent 51%) 9em -4.5em/22em
+            28em,
+          radial-gradient(40% 40% at 50% 50%, #ffff00 48%, transparent 52%)
+            22.5em 19em/5em 6em,
+          radial-gradient(40% 40% at 50% 50%, #000 48%, transparent 52%) 22em
+            18.75em/5.75em 6.5em,
+          radial-gradient(40% 40% at 50% 50%, #ffff00 48%, transparent 52%) 18em
+            19em/6em 6em,
+          radial-gradient(40% 40% at 50% 50%, #000 48%, transparent 52%) 17.75em
+            18.75em/6.5em 6.5em,
+          linear-gradient(90deg, #ff0000 50%, transparent 50%) 21em 16.5em/4em
+            3em,
+          linear-gradient(90deg, #000 50%, transparent 50%) 20.85em 16.5em/4.5em
+            3.25em,
+          radial-gradient(40% 40% at 50% 50%, #ff0000 49%, transparent 51%) 11em
+            14em/12em 12em,
+          radial-gradient(40% 40% at 50% 50%, #000 49%, transparent 51%) 10.75em
+            13.75em/12.75em 12.75em,
+          radial-gradient(40% 40% at 50% 50%, #0000ff 49%, transparent 51%) 8em
+            10em/25em 23em,
+          radial-gradient(40% 40% at 50% 50%, #000 49%, transparent 51%) 7.5em
+            9.5em/26em 24.25em,
+          radial-gradient(40% 40% at 50% 50%, #c68642 48%, transparent 52%)
+            20.5em 15.5em/10em 16.5em,
+          radial-gradient(40% 40% at 50% 50%, #000 48%, transparent 52%) 20em
+            15em/11em 17.5em,
+          radial-gradient(40% 40% at 50% 50%, #f1c27d 48%, transparent 52%)
+            21.5em 15em/10em 17.5em,
+          radial-gradient(40% 40% at 50% 50%, #000 48%, transparent 52%) 21.65em
+            15em/10em 17.5em,
+          radial-gradient(40% 40% at top, #000 49%, transparent 51%) 9.25em
+            7.5em/25.5em 12em,
+          linear-gradient(90deg, #000 45%, transparent 55%) 27em 5.5em/0.75em
+            1.5em,
+          linear-gradient(90deg, #000 45%, transparent 55%) 28em 5.5em/0.75em
+            1.5em,
+          radial-gradient(40% 40% at 50% 50%, #fff 48%, transparent 52%) 22em
+            0.75em/10.9em 12em,
+          radial-gradient(40% 40% at 50% 50%, #000 48%, transparent 52%) 21.5em
+            0em/11.5em 13em,
+          radial-gradient(40% 40% at 50% 50%, #fff 48%, transparent 52%) 21.5em
+            3.5em/11em 10em,
+          radial-gradient(40% 40% at 50% 50%, #000 48%, transparent 52%) 21.5em
+            3.5em/11em 10.5em,
+          radial-gradient(40% 40% at 50% 50%, #ff0000 48%, transparent 52%) 19em -1em/12em
+            30em;
+        background-repeat: no-repeat;
+        font-size: 10px;
+        width: 50em;
+        height: 50em;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+      }
+
+      .mario:before {
+        position: absolute;
+        content: "";
+        background: radial-gradient(
+              40% 40% at bottom,
+              #ff0000 49%,
+              transparent 51%
+            )
+            13.75em -3.25em/25.5em 12em,
+          radial-gradient(40% 40% at bottom, #000 49%, transparent 51%) 13.75em -4.35em/25.5em
+            13em,
+          radial-gradient(40% 40% at bottom, #000 49%, transparent 51%) 13.75em -3.15em/25.5em
+            12em,
+          linear-gradient(90deg, #000 45%, transparent 55%) 12em 17.5em/2.5em
+            0.45em,
+          linear-gradient(90deg, #000 45%, transparent 55%) 12em 18.5em/2.5em
+            0.45em,
+          linear-gradient(90deg, #000 48%, transparent 52%) 12em 20em/2.5em
+            0.25em,
+          linear-gradient(90deg, #000 48%, transparent 52%) 12.5em 20.25em/0.5em
+            1em,
+          radial-gradient(40% 40% at 50% 50%, #fff 48%, transparent 52%) 7em
+            12.75em/10.9em 12em,
+          radial-gradient(40% 40% at 50% 50%, #000 48%, transparent 52%) 6.5em
+            12.25em/11.5em 13em,
+          radial-gradient(40% 40% at 50% 50%, #fff 48%, transparent 52%) 7.75em
+            13.5em/11em 10em,
+          radial-gradient(40% 40% at 50% 50%, #000 48%, transparent 52%) 8.25em
+            13.25em/11em 10.5em,
+          radial-gradient(40% 40% at 50% 50%, #ff0000 48%, transparent 52%) 5em
+            14em/21em 8em,
+          radial-gradient(40% 40% at 50% 50%, #000 48%, transparent 52%) 5em
+            13.5em/21.5em 9em;
+        background-repeat: no-repeat;
+        font-size: 10px;
+        width: 50em;
+        height: 50em;
+        transform: rotate(-15deg);
+      }
+
+      .mario:after {
+        content: "M";
+        position: absolute;
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-top: 45px;
+        margin-left: 195px;
+        transform: rotate(-30deg);
+        color: #ff0000;
+      }
+    </style>
+  </head>
+  <body data-barba="wrapper">
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <main data-barba="container" data-barba-namespace="home">
+      <a href="../index.html" class="back-btn"
+        ><i class="fas fa-chevron-left"></i> Back</a
+      >
+      <h2>Mario</h2>
+      <div class="mario"></div>
+    </main>
+  </body>
+</html>

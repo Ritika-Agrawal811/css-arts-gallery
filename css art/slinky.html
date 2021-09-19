@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Slinky</title>
+    <style>
+      .slinky {
+        background: radial-gradient(
+              40% 40% at 50% 50%,
+              #000 49%,
+              transparent 51%
+            )
+            32em 12em/7em 4em,
+          radial-gradient(40% 40% at 50% 50%, #fff44f 49%, transparent 51%) 29em
+            10.25em/12em 8em,
+          radial-gradient(40% 40% at 50% 50%, #8b4513 49%, transparent 51%) 29em
+            11em/12em 8em,
+          radial-gradient(40% 40% at 50% 50%, #000 49%, transparent 51%) 28.75em
+            6.75em/7em 7em,
+          radial-gradient(40% 40% at 50% 50%, #000 49%, transparent 51%) 33.75em
+            6.75em/6.5em 6.5em,
+          radial-gradient(40% 40% at 50% 50%, #fff 49%, transparent 51%) 26.5em
+            4em/12em 12em,
+          radial-gradient(40% 40% at 50% 50%, #fff 49%, transparent 51%) 31.5em
+            4em/11.5em 11.5em,
+          radial-gradient(40% 40% at 50% 50%, #ffb733 49%, transparent 51%)
+            25.75em 2.75em/13em 12em,
+          radial-gradient(40% 40% at 50% 50%, #ffb733 49%, transparent 51%)
+            30.75em 2.75em/12.5em 11.5em,
+          radial-gradient(40% 40% at 50% 50%, #000 49%, transparent 51%) 26em
+            2.5em/12em 12em,
+          radial-gradient(40% 40% at 50% 50%, #000 49%, transparent 51%) 31.5em
+            2.5em/11.5em 11.5em,
+          radial-gradient(40% 40% at 50% 50%, #fff44f 49%, transparent 51%)
+            23.5em 10em/22em 10em,
+          radial-gradient(40% 40% at 50% 50%, #fff44f 49%, transparent 51%) 30em
+            7.5em/10em 14em,
+          linear-gradient(90deg, #b48648 50%, transparent 50%) 16em 42em / 0.5em
+            2em,
+          linear-gradient(90deg, #b48648 50%, transparent 50%) 17em 42em / 0.5em
+            2em,
+          linear-gradient(90deg, #b48648 50%, transparent 50%) 10em 42em / 0.5em
+            2em,
+          linear-gradient(90deg, #b48648 50%, transparent 50%) 11em 42em / 0.5em
+            2em,
+          radial-gradient(40% 40% at 50% 50%, #fff44f 49%, transparent 51%) 4em
+            38.5em/12em 8em,
+          radial-gradient(40% 40% at 50% 50%, #fff44f 49%, transparent 51%) 10em
+            38.5em/12em 8em,
+          linear-gradient(90deg, #8b4513 50%, transparent 50%) 27.25em 6em / 4em
+            10em,
+          radial-gradient(40% 40% at 50% 50%, #ffb733 49%, transparent 51%) 18em -5em/32em
+            32em,
+          /* ears */
+            radial-gradient(40% 40% at 50% 50%, #8b4513 49%, transparent 51%)
+            22em -3em/12em 28em,
+          radial-gradient(40% 40% at 50% 50%, #8b4513 49%, transparent 51%) 34em -3em/12em
+            28em,
+          /* legs */
+            radial-gradient(40% 40% at bottom, #ffb733 49%, transparent 51%)
+            6.25em 5em/ 5.5em 35em,
+          radial-gradient(40% 40% at bottom, #a0522d 49%, transparent 51%)
+            6.25em 16.5em/ 5em 20em,
+          linear-gradient(90deg, #a0522d 50%, transparent 50%) 7.85em 34.5em/3.75em
+            8em,
+          /* neck */ linear-gradient(90deg, #a0522d 50%, transparent 50%) 32.5em
+            17em/4.5em 3em,
+          radial-gradient(40% 40% at 50% 50%, #00b300 49%, transparent 51%)
+            27.5em 15em/12em 10em,
+          radial-gradient(40% 40% at 50% 50%, #ffb733 49%, transparent 51%)
+            21.5em 11.5em/23em 23em,
+          /* spring */
+            radial-gradient(40% 40% at 50% 50%, #fff 49%, transparent 51%) 20em
+            13em/23em 23em,
+          radial-gradient(40% 40% at 50% 50%, #8d8d8d 49%, transparent 51%) 19em
+            12em/25em 25em,
+          radial-gradient(40% 40% at 50% 50%, #fff 49%, transparent 51%) 18em
+            15em/23em 23em,
+          radial-gradient(40% 40% at 50% 50%, #8d8d8d 49%, transparent 51%) 17em
+            14em/25em 25em,
+          radial-gradient(40% 40% at 50% 50%, #fff 49%, transparent 51%) 16em
+            17em/23em 23em,
+          radial-gradient(40% 40% at 50% 50%, #8d8d8d 49%, transparent 51%) 15em
+            16em/25em 25em,
+          radial-gradient(40% 40% at 50% 50%, #fff 49%, transparent 51%) 14em
+            18em/23em 23em,
+          radial-gradient(40% 40% at 50% 50%, #8d8d8d 49%, transparent 51%) 13em
+            17em/25em 25em,
+          radial-gradient(40% 40% at 50% 50%, #fff 49%, transparent 51%) 12em
+            19em/23em 23em,
+          radial-gradient(40% 40% at 50% 50%, #8d8d8d 49%, transparent 51%) 11em
+            18em/25em 25em,
+          radial-gradient(40% 40% at 50% 50%, #ffb733 49%, transparent 51%)
+            12.25em 23em/9em 17em,
+          radial-gradient(40% 40% at 50% 50%, #fff 49%, transparent 51%) 8em
+            20em/23em 23em,
+          radial-gradient(40% 40% at 50% 50%, #8d8d8d 49%, transparent 51%) 7em
+            19em/25em 25em,
+          radial-gradient(40% 40% at 50% 50%, #ffb733 49%, transparent 51%)
+            6.75em 21.25em/17.5em 22.5em,
+          radial-gradient(40% 40% at 50% 50%, #fff 49%, transparent 51%) 5em
+            21em/23em 23em,
+          radial-gradient(40% 40% at 50% 50%, #8d8d8d 49%, transparent 51%) 4em
+            20em/25em 25em,
+          radial-gradient(40% 40% at 50% 50%, #ffb733 49%, transparent 51%) 3em
+            21em/23em 23em,
+          radial-gradient(40% 40% at 50% 50%, #8d8d8d 49%, transparent 51%) 2em
+            20em/25em 25em,
+          radial-gradient(40% 40% at 50% 50%, #ffb733 49%, transparent 51%) -2em
+            18em/30em 30em,
+          radial-gradient(40% 40% at bottom, #ffb733 49%, transparent 51%)
+            12.25em 25em/ 5.5em 15em,
+          radial-gradient(40% 40% at bottom, #a0522d 49%, transparent 51%)
+            11.5em 24.75em/ 7em 15em,
+          linear-gradient(90deg, #a0522d 50%, transparent 50%) 14em 37.75em/4em
+            4em,
+          /* tail */
+            radial-gradient(40% 40% at 50% 50%, #8b4513 49%, transparent 51%)
+            8em 18em/5em 7.5em,
+          radial-gradient(40% 40% at 50% 50%, #fff 49%, transparent 51%) 8.5em
+            21.5em/3em 3em,
+          radial-gradient(40% 40% at 50% 50%, #8d8d8d 49%, transparent 51%) 8em
+            21em/4em 4em,
+          radial-gradient(40% 40% at 50% 50%, #fff 49%, transparent 51%) 7.5em
+            21.5em/4em 4em,
+          radial-gradient(40% 40% at 50% 50%, #8d8d8d 49%, transparent 51%) 7em
+            21em/5em 5em,
+          radial-gradient(40% 40% at 50% 50%, #fff 49%, transparent 51%) 6.5em
+            22em/5em 5em,
+          radial-gradient(40% 40% at 50% 50%, #8d8d8d 49%, transparent 51%) 6em
+            21.5em/6em 6em,
+          radial-gradient(40% 40% at 50% 50%, #fff 49%, transparent 51%) 5.5em
+            22.5em/6em 6em,
+          radial-gradient(40% 40% at 50% 50%, #8d8d8d 49%, transparent 51%) 5em
+            22em/7em 7em,
+          radial-gradient(40% 40% at 50% 50%, #fff 49%, transparent 51%) 5.5em
+            23.5em/6em 6em,
+          radial-gradient(40% 40% at 50% 50%, #8d8d8d 49%, transparent 51%) 5em
+            23em/7em 7em,
+          radial-gradient(40% 40% at 50% 50%, #fff 49%, transparent 51%) 5.5em
+            24.5em/6em 6em,
+          radial-gradient(40% 40% at 50% 50%, #8d8d8d 49%, transparent 51%) 5em
+            24em/7em 7em,
+          radial-gradient(40% 40% at 50% 50%, #fff 49%, transparent 51%) 5.5em
+            26.5em/6em 6em,
+          radial-gradient(40% 40% at 50% 50%, #8d8d8d 49%, transparent 51%) 5em
+            26em/7em 7em;
+        background-repeat: no-repeat;
+        font-size: 10px;
+        width: 50em;
+        height: 50em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .slinky:before {
+        content: "";
+        background: linear-gradient(90deg, #8b4513 50%, transparent 50%) 20.5em
+            14em / 3em 5em,
+          radial-gradient(40% 40% at 50% 50%, #8b4513 49%, transparent 51%) 17em
+            7em/11em 23em;
+        background-repeat: no-repeat;
+        font-size: 10px;
+        width: 50em;
+        height: 50em;
+        position: absolute;
+        transform: rotate(30deg);
+      }
+
+      .slinky:after {
+        content: "";
+        background: linear-gradient(90deg, #b48648 50%, transparent 50%) 31em
+            31em / 3em 0.25em,
+          linear-gradient(90deg, #b48648 50%, transparent 50%) 32em 32em / 3em
+            0.25em,
+          linear-gradient(90deg, #b48648 50%, transparent 50%) 32em 33em / 2.5em
+            0.25em,
+          linear-gradient(90deg, #b48648 50%, transparent 50%) 36em 32em / 3em
+            0.25em,
+          linear-gradient(90deg, #b48648 50%, transparent 50%) 37em 33em / 3em
+            0.25em,
+          linear-gradient(90deg, #b48648 50%, transparent 50%) 37em 34em / 2.5em
+            0.25em,
+          radial-gradient(40% 40% at 50% 50%, #b48648 49%, transparent 51%)
+            27.5em 31em/6em 4em,
+          radial-gradient(40% 40% at 50% 50%, #b48648 49%, transparent 51%)
+            32.5em 32em/6em 4em,
+          radial-gradient(40% 40% at 50% 50%, #fff44f 49%, transparent 51%) 25em
+            27.5em/12em 10em,
+          radial-gradient(40% 40% at 50% 50%, #fff44f 49%, transparent 51%) 30em
+            28.5em/12em 10em,
+          linear-gradient(90deg, #8b4513 50%, transparent 50%) 42.5em 24em / 3em
+            5em,
+          radial-gradient(40% 40% at 50% 50%, #8b4513 49%, transparent 51%) 37em
+            16.5em/10em 23em,
+          linear-gradient(90deg, #a0522d 50%, transparent 50%) 29em 28em/4em 4em,
+          linear-gradient(90deg, #a0522d 50%, transparent 50%) 34.5em 29em/4em
+            4em;
+        background-repeat: no-repeat;
+        font-size: 10px;
+        width: 50em;
+        height: 50em;
+        position: absolute;
+        transform: rotate(-30deg);
+      }
+    </style>
+  </head>
+  <body data-barba="wrapper">
+    <ul class="transition">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <main data-barba="container" data-barba-namespace="home">
+      <a href="../index.html" class="back-btn"
+        ><i class="fas fa-chevron-left"></i> Back</a
+      >
+      <h2>Slinky</h2>
+      <div class="slinky"></div>
+    </main>
+  </body>
+</html>
